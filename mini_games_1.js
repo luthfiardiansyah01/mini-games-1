@@ -13,20 +13,22 @@ while (asking) {
     console.log(comp);
 
     let result = '';
+    let reslutTwo = '';
     if (choose == comp) {
         result = 'DRAW! 🤝🏻';
     } else if (choose == 'Stone') {
         result = (comp == 'Scissor') ? 'GOOD GAME 💫' : "YAH DON'T BE DISCOURAGED 😢";
+        alert('You choose : ' + choose + ' and the computer chooses : ' + comp + '\nThen the result is : ' + result);
     } else if (choose == 'Paper') {
         result = (comp == 'Scissor') ? 'NEVER GIVE UP! 💪🏻 ' : 'NICE, YOU WIN 🥳';
+        alert('You choose : ' + choose + ' and the computer chooses : ' + comp + '\nThen the result is : ' + result);
     } else if (choose == 'Scissor') {
         result = (comp == 'Stone') ? 'NO PROBLEM, KEEP PLAY AGAIN 😓' : "CONGRATS YOU'RE CHAMPION 🏆";
+        alert('You choose : ' + choose + ' and the computer chooses : ' + comp + '\nThen the result is : ' + result);
     } else {
-        result = ' Your choice is wrong!! 🙅🏻‍♂️';
+        resultTwo = ' Your choice is wrong!! 🙅🏻‍♂️';
+        alert(resultTwo);
     }
-
-    alert('You choose : ' + choose + ' and the computer chooses : ' + comp + '\nThen the result is : ' + result);
-
     asking = confirm('Try again?');
 }
 alert("Thanks, you was played and have a nice day 🤩");
